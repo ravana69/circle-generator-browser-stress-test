@@ -1,0 +1,46 @@
+        *{
+            margin: 0;
+        }
+        @keyframes shadow{
+	0%{
+		box-shadow: 0px 0px 300px 56px rgba(148,139,6,0.5);
+	}
+
+    50%{
+        box-shadow: 0px 0px 300px 56px rgba(148,139,6,1);
+    }
+	
+	100%{
+		box-shadow: 0px 0px 300px 56px rgba(148,139,6,0.5);
+	}
+}
+    body{
+        background-color: black;
+    }
+    
+    h2{
+        color: yellow;
+        font-size: 2em;
+    }
+
+    button{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        padding: 100px 200px;
+        border-radius: 50px;
+        font-size: 5em;
+        cursor: pointer;
+        transition: 0.5s;
+        background-color: yellow;
+        border: none;
+        box-shadow: -4px 25px 67px -1px rgba(189,186,134,0.82);
+        animation: shadow 3s infinite;
+        font-weight: 900;
+    }
+
+    button:hover{
+        transform: translate(-50%, -50%) scale(1.1);
+        transition: 0.5s;
+    }
